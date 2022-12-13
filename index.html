@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.cdnfonts.com/css/axiforma" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div class="navigation">
+  <nav class="main_navigation">
+    <img class="logo" src="./assets/Group.png" alt="Logo">
+    <ul>
+      <li class="nav__item">
+        <img src="assets/icons/Vector.svg" alt="">
+        <a class="nav__link active" href="">Home</a>
+      </li>
+      <li class="nav__item">
+        <img src="assets/icons/file.svg" alt="">
+        <a class="nav__link drop_down" href="">Portfolio
+          <img src="./assets/icons/dropDownVector.svg" alt=""></a>
+        <ul class="dropdown">
+          <li><a href="#">Web Development</a></li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <img src="assets/icons/dolar.svg" alt="">
+        <a class="nav__link" href="">Pricing</a>
+      </li>
+      <li class="nav__item">
+        <img src="assets/icons/puzle.svg" alt="">
+        <a class="nav__link" href="">Marketplace</a>
+      </li>
+      <li class="nav__item">
+        <img src="assets/icons/dash.svg" alt="">
+        <a class="nav__link" href="">Futures</a>
+      </li>
+      <li class="nav__item">
+        <img src="assets/icons/setting.svg" alt="">
+        <a class="nav__link" href="">Settings</a>
+      </li>
+    </ul>
+    <div class="profile_settings">
+      <img src="assets/icons/profile.svg" alt="">
+      <button class="change_page_theme">
+        <img width="23px" src="assets/icons/theme.svg" alt="">
+      </button>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <section class="main">
+    <div class="exchange" id="style-1">
+      <form action="" class="Form">
+        <div class="Form-fields">
+          <label for="checkbox" class="Control-label"></label>
+          <input type="checkbox" id="show-checkbox" class="show-checkbox" checked>
+          <label for="show-checkbox" class="Control-label Control-label--showCheckBox" >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" class="svg-toggle-password" title="Toggle Password Security">
+              <path d="M24,9A23.654,23.654,0,0,0,2,24a23.633,23.633,0,0,0,44,0A23.643,23.643,0,0,0,24,9Zm0,25A10,10,0,1,1,34,24,10,10,0,0,1,24,34Zm0-16a6,6,0,1,0,6,6A6,6,0,0,0,24,18Z"/>
+              <rect x="20.133" y="2.117" height="44" transform="translate(23.536 -8.587) rotate(45)" class="closed-eye"/>
+              <rect x="22" y="3.984" width="4" height="44" transform="translate(25.403 -9.36) rotate(45)" style="fill:#fff" class="closed-eye"/>
+            </svg>
+          </label>
+          <input type="text" id="checkbox" placeholder="Hide small balances" disabled class="ControlInput ControlInput--checkbox">
+        </div>
+        <div>
+          <div class="Form-fields">
+            <label for="sort" class="Control-label"></label>
+            <input type="checkbox" id="show-sort" class="sort" checked>
+            <label for="show-sort" class="Control-label Control-label--showSort" >
+              <img src="./assets/icons/sort-down.svg" alt="">
+            </label>
+            <input type="text" id="sort" placeholder="Sort" disabled class="ControlInput ControlInput--sort">
+          </div>
+        </div>
+      </form>
+      <div class="icon-search">
+        <input type="search" placeholder="Search your exchange">
+      </div>
+      <div class="main_exchange_section">
+
+        <div class="exchange_item">
+          <img src="./assets/icons/MetaMask.svg" alt="">
+          <p>Metamask</p>
+          <span>4.58%</span>
+          <img class="chart_image" src="./assets/icons/chart.svg" alt="">
+          <div class="exchange_action">
+            <a href="">
+              <img style="width: 30px" src="./assets/icons/edit.svg" alt="">
+            </a>
+            <a href="">
+              <img style="width: 18px" src="./assets/icons/delete.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="exchange_with_graph">
+
+          <div class="graph_and_cost">
+            <div class="exchange_names">
+              <img src="./assets/icons/binance.svg" alt="">
+              <span>Binance</span>
+              <p>$1000.00</p>
+            </div>
+            <div class="exchange_cost">
+              <p>4.85%</p>
+              <img src="./assets/icons/greenChart.svg" alt="">
+            </div>
+          </div>
+
+          <div class="exchange_savings">
+            <div>
+              <img src="./assets/icons/binance.svg" alt="">
+              <span>Binance Savings</span>
+            </div>
+            <div>
+              <img src="./assets/icons/binance.svg" alt="">
+              <span>Binance Savings</span>
+            </div>
+          </div>
+
+          <div class="CoinBaseContainer">
+            <div>
+              <img src="./assets/icons/Ellipse.svg" alt="">
+              <p>Coinbase</p>
+              <span>4.58%</span>
+              <img src="./assets/icons/chart.svg" alt="">
+              <div class="exchange_action">
+                <a href=""><img src="./assets/icons/edit.svg" alt=""></a>
+                <a href=""><img src="./assets/icons/delete.svg" alt=""></a>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/Ellipse.svg" alt="">
+              <p>Coinbase</p>
+              <span>4.58%</span>
+              <img src="./assets/icons/chart.svg" alt="">
+              <div class="exchange_action">
+                <a href="">
+                  <img src="./assets/icons/edit.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/icons/delete.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/Ellipse.svg" alt="">
+              <p>Coinbase</p>
+              <span>4.58%</span>
+              <img src="./assets/icons/chart.svg" alt="">
+              <div class="exchange_action">
+                <a href="">
+                  <img src="./assets/icons/edit.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/icons/delete.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/Ellipse.svg" alt="">
+              <p>Coinbase</p>
+              <span>4.58%</span>
+              <img src="./assets/icons/chart.svg" alt="">
+              <div class="exchange_action">
+                <a href="">
+                  <img src="./assets/icons/edit.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/icons/delete.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/Ellipse.svg" alt="">
+              <p>Coinbase</p>
+              <span>4.58%</span>
+              <img src="./assets/icons/chart.svg" alt="">
+              <div class="exchange_action">
+                <a href="">
+                  <img src="./assets/icons/edit.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/icons/delete.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="subscribeContainer">
+    <p>Your free trial has been started․ There are <span>5 days</span> left.</p>
+    <button>Subscribe</button>
+  </div>
+  <div class="first_chart_container">
+    <div class="TotalPoint">
+      <div class="TotalPointsSorting">
+      <h1>Total Points</h1>
+        <select name="select_sorts" id="select_sort">
+          <option value="all">All</option>
+        </select>
+        <select name="select_years" id="select_year">
+          <option value="1year">1 year</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <div class="box">
+          <div id="line"> </div>
+          <div class="lineCheckboxes">
+            <label class="checkbox-custom-label" for="usd" style="color: #128994">
+              <input class="checkbox-custom" id="usd" type="checkbox">
+              USD
+            </label>
+            <label class="checkbox-custom-label" for="btc" style="color: #58C925">
+              <input class="checkbox-custom" id="btc" type="checkbox">
+              BTC
+            </label>
+            <label class="checkbox-custom-label" for="eth" style="color: white">
+              <input class="checkbox-custom" id="eth" type="checkbox">
+              ETH
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="TotalPoint">
+      <div class="TotalCoinsSorting">
+          <div class="MonthlyBox">
+            <div>
+              <h1>Most usable exchanges</h1>
+              <div><button>See More</button></div>
+            </div>
+            <img src="./assets/icons/columnchart.svg" alt="">
+          </div>
+      </div>
+    </div>
+    <div class="TotalPoint">
+      <div class="bloopSorting">
+        <div style="width: 223px;">
+          <div class="bloop_point">
+            <div class="bloop_point_header">
+              <h1>Coins</h1>
+              <button>See More</button>
+            </div>
+            <div class="first_block_point">
+              <span>TOP</span>
+              <span>Gainer</span>
+              <p>Apecoin</p>
+              <div>
+                <img src="./assets/icons/sortUp.svg" alt="">
+                <span>0.74%</span>
+              </div>
+            </div>
+            <img class="first_bloop_item" src="./assets/icons/bloop.svg" alt="">
+            <div class="second_bloop_point">
+              <span>TOP</span>
+              <span>Looser</span>
+              <p>Apecoin</p>
+              <div>
+                <img src="./assets/icons/sortDown.svg" alt="">
+                <span>0.74%</span>
+              </div>
+            </div>
+            <img class="second_bloop_item" src="./assets/icons/bloopdivide.svg" alt="">
+            <div class="bloop_item_buttons">
+              <button>1h</button>
+              <button>24h</button>
+              <button>7d</button>
+              <button>1m</button>
+              <button>3m</button>
+              <button>6m</button>
+              <button>1y</button>
+              <button>all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="second_chart_container">
+    <div class="TotalPoint">
+      <div class="NameAndPrice">
+        <div class="refreshBox">
+          <img src="./assets/icons/nameIcon.svg" alt="">
+        </div>
+        <div class="nameBox">
+      <span>
+        <img src="./assets/icons/Layer.svg" alt="">
+        <span>$ 885,914.000</span>
+      </span>
+          <p>Mr. Nick Peterson</p>
+        </div>
+      </div>
+      <div class="bloop_item_buttons">
+        <button>1h</button>
+        <button>24h</button>
+        <button>7d</button>
+        <button>1m</button>
+        <button>3m</button>
+        <button>6m</button>
+        <button>1y</button>
+        <button>all</button>
+      </div>
+      <div id="BarChart"></div>
+    </div>
+    <div class="TotalPoint">
+      <div class="AnalyticBox">
+        <div>
+          <h1>Analytics</h1>
+        </div>
+        <div><button>See More</button></div>
+      </div>
+      <div class="Analytics_Items">
+        <div>
+          <img src="./assets/icons/Count.svg" alt="">
+          <p>Total Trade Count</p>
+          <span>128</span>
+        </div>
+        <div>
+          <img src="./assets/icons/usedExchange.svg" alt="">
+          <p>The Most Used Exchanges</p>
+          <img src="./assets/icons/binance-coin.svg" alt="">
+          <span>Binance</span>
+        </div>
+        <div>
+          <img src="./assets/icons/Withdraw.svg" alt="">
+          <p>Total Withdraw</p>
+          <span>$200</span>
+        </div>
+        <div>
+          <img src="./assets/icons/FeePaid.svg" alt="">
+          <p>Total Fee Paid</p>
+          <span>$12</span>
+        </div>
+      </div>
+    </div>
+    <div class="TotalPoint">
+      <div class="AnalyticBox">
+        <div>
+          <h1>Futures</h1>
+        </div>
+        <div><button>See More</button></div>
+      </div>
+      <div>
+        <div class="FutureExchanges">
+          <div>
+            <p>3/22/2022<span>17:51:03 PM</span></p>
+            <div class="FutureProcess">
+              <p>
+                <img src="./assets/icons/arrow-down-short.svg" alt="">
+                <span style="color: #61E224;">$0.74</span>
+                <img src="./assets/icons/bi_arrow-down-short.svg" alt="">
+                <span style="color: #FF0000;">0.58%</span>
+              </p>
+            </div>
+          </div>
+          <div class="totalFutureProcess">
+            <span>$3,6982.58</span>
+          </div>
+        </div>
+        <div class="FutureChartBox">
+          <div id="futureChart">
+
+          </div>
+        </div>
+        <div class="infoAboutFutures">
+          <div>
+            <p>Asset</p>
+            <hr width="50px">
+            <span>ES</span>
+          </div>
+          <div>
+            <p>Margin balance</p>
+            <hr>
+            <span>$12.50</span>
+          </div>
+          <div>
+            <p>Wallet balance</p>
+            <hr>
+            <span>$5,225.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="TableSection">
+      <h2>Holdings</h2>
+      <table class="customTable">
+        <thead>
+        <tr>
+          <th><p>Name</p></th>
+          <th><p>Amount</p></th>
+          <th><p>Total</p></th>
+          <th><p>1 Hour Charge</p></th>
+          <th><p>Market Cap</p></th>
+          <th><p>Price in BTC</p></th>
+          <th><p>Price Graph(7D)</p></th>
+          <th><img src="./assets/icons/burger.svg" alt=""></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <img src="./assets/icons/AAVE.svg" alt="">
+            Aave Abat v2
+          </td>
+          <td>99</td>
+          <td>$56.48</td>
+          <td style="color: #34D35C; position: relative; left: 82px">
+            <img src="./assets/icons/VectorUp.svg" alt="">
+            1.88%
+          </td>
+          <td>72.8B</td>
+          <td>9.12455558</td>
+          <td><img src="./assets/icons/PriceGraph.svg" alt=""></td>
+          <td style="position: relative; left: 8px;"><img src="./assets/icons/actions.svg" alt=""></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./assets/icons/AAVE.svg" alt="">
+            Aave Abat v2
+          </td>
+          <td>99</td>
+          <td>$56.48</td>
+          <td style="color: #34D35C; position: relative; left: 82px">
+            <img src="./assets/icons/VectorUp.svg" alt="">
+            1.88%
+          </td>
+          <td>72.8B</td>
+          <td>9.12455558</td>
+          <td><img src="./assets/icons/PriceGraph.svg" alt=""></td>
+          <td style="position: relative; left: 8px;"><img src="./assets/icons/actions.svg" alt=""></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./assets/icons/AAVE.svg" alt="">
+            Aave Abat v2
+          </td>
+          <td>99</td>
+          <td>$56.48</td>
+          <td style="color: #34D35C; position: relative; left: 82px">
+            <img src="./assets/icons/VectorUp.svg" alt="">
+            1.88%
+          </td>
+          <td>72.8B</td>
+          <td>9.12455558</td>
+          <td><img src="./assets/icons/PriceGraph.svg" alt=""></td>
+          <td style="position: relative; left: 8px;"><img src="./assets/icons/actions.svg" alt=""></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+<script src="dist/apexcharts.js"></script>
+<script src="src/chart.js"></script>
+<script src="src/script.js"></script>
+</body>
+</html>
